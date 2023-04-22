@@ -33,7 +33,7 @@ def generate_points(number_of_points):
         points.append(new_point)
     file = open("points.csv", "w")
     for point in points:
-        file.write(str(point.x) + "," + str(point.y) + "," + str(point.ile) + "," + str(point.odbior) + ",\n")
+        file.write(str(point.x) + "," + str(point.y) + "," + str(point.ile) + "," + str(point.odbior) + "\n")
     file.close()
 
 
