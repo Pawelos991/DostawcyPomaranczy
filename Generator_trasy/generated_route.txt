@@ -1,421 +1,421 @@
-Total route length: 988.66.
+Total route length: 1246.07.
 1.   Point ID: 105.
      This point is a warehouse.
-     Amount to pick up:   1926.
+     Amount to pick up:   1932.
      Amount before point: 0.
-     Amount after point:  1926.
-2.   Point ID: 26.
-     Amount to drop down: 193.
-     Amount before point: 1926.
-     Amount after point:  1733.
-3.   Point ID: 54.
-     Amount to drop down: 124.
-     Amount before point: 1733.
-     Amount after point:  1609.
-4.   Point ID: 77.
-     Amount to drop down: 120.
-     Amount before point: 1609.
-     Amount after point:  1489.
-5.   Point ID: 6.
-     Amount to pick up:   129.
-     Amount before point: 1489.
-     Amount after point:  1618.
-6.   Point ID: 96.
-     Amount to drop down: 200.
-     Amount before point: 1618.
-     Amount after point:  1418.
-7.   Point ID: 86.
-     Amount to drop down: 143.
-     Amount before point: 1418.
-     Amount after point:  1275.
-8.   Point ID: 30.
-     Amount to drop down: 198.
-     Amount before point: 1275.
-     Amount after point:  1077.
-9.   Point ID: 56.
-     Amount to pick up:   155.
-     Amount before point: 1077.
-     Amount after point:  1232.
-10.  Point ID: 12.
-     Amount to drop down: 129.
-     Amount before point: 1232.
-     Amount after point:  1103.
-11.  Point ID: 68.
-     Amount to drop down: 101.
-     Amount before point: 1103.
-     Amount after point:  1002.
-12.  Point ID: 74.
-     Amount to drop down: 113.
-     Amount before point: 1002.
-     Amount after point:  889.
-13.  Point ID: 43.
-     Amount to pick up:   174.
-     Amount before point: 889.
-     Amount after point:  1063.
-14.  Point ID: 22.
-     Amount to drop down: 170.
-     Amount before point: 1063.
-     Amount after point:  893.
-15.  Point ID: 13.
-     Amount to drop down: 137.
-     Amount before point: 893.
-     Amount after point:  756.
-16.  Point ID: 47.
-     Amount to drop down: 134.
-     Amount before point: 756.
-     Amount after point:  622.
-17.  Point ID: 92.
-     Amount to pick up:   175.
-     Amount before point: 622.
-     Amount after point:  797.
-18.  Point ID: 75.
-     Amount to drop down: 164.
-     Amount before point: 797.
-     Amount after point:  633.
-19.  Point ID: 3.
-     Amount to drop down: 112.
-     Amount before point: 633.
-     Amount after point:  521.
-20.  Point ID: 64.
-     Amount to drop down: 194.
-     Amount before point: 521.
-     Amount after point:  327.
-21.  Point ID: 70.
-     Amount to drop down: 199.
-     Amount before point: 327.
-     Amount after point:  128.
-22.  Point ID: 81.
-     Amount to pick up:   168.
-     Amount before point: 128.
-     Amount after point:  296.
-23.  Point ID: 39.
-     Amount to drop down: 153.
-     Amount before point: 296.
-     Amount after point:  143.
-24.  Point ID: 105.
-     This point is a warehouse.
-     Amount to pick up:   1719.
-     Amount before point: 143.
-     Amount after point:  1862.
-25.  Point ID: 33.
-     Amount to drop down: 184.
-     Amount before point: 1862.
-     Amount after point:  1678.
-26.  Point ID: 32.
-     Amount to drop down: 173.
-     Amount before point: 1678.
-     Amount after point:  1505.
-27.  Point ID: 60.
-     Amount to drop down: 180.
-     Amount before point: 1505.
-     Amount after point:  1325.
-28.  Point ID: 20.
-     Amount to drop down: 161.
-     Amount before point: 1325.
-     Amount after point:  1164.
-29.  Point ID: 29.
-     Amount to drop down: 121.
-     Amount before point: 1164.
-     Amount after point:  1043.
-30.  Point ID: 42.
-     Amount to drop down: 129.
-     Amount before point: 1043.
-     Amount after point:  914.
-31.  Point ID: 18.
-     Amount to drop down: 138.
-     Amount before point: 914.
-     Amount after point:  776.
-32.  Point ID: 62.
-     Amount to drop down: 150.
-     Amount before point: 776.
-     Amount after point:  626.
-33.  Point ID: 52.
-     Amount to drop down: 163.
-     Amount before point: 626.
-     Amount after point:  463.
-34.  Point ID: 10.
-     Amount to drop down: 167.
-     Amount before point: 463.
-     Amount after point:  296.
-35.  Point ID: 67.
-     Amount to drop down: 153.
-     Amount before point: 296.
-     Amount after point:  143.
-36.  Point ID: 35.
-     Amount to pick up:   165.
-     Amount before point: 143.
-     Amount after point:  308.
-37.  Point ID: 59.
-     Amount to pick up:   186.
-     Amount before point: 308.
-     Amount after point:  494.
-38.  Point ID: 82.
-     Amount to pick up:   130.
-     Amount before point: 494.
-     Amount after point:  624.
-39.  Point ID: 5.
-     Amount to drop down: 189.
-     Amount before point: 624.
-     Amount after point:  435.
-40.  Point ID: 88.
-     Amount to pick up:   162.
-     Amount before point: 435.
-     Amount after point:  597.
-41.  Point ID: 41.
-     Amount to pick up:   142.
-     Amount before point: 597.
-     Amount after point:  739.
-42.  Point ID: 23.
-     Amount to pick up:   194.
-     Amount before point: 739.
-     Amount after point:  933.
-43.  Point ID: 17.
-     Amount to pick up:   154.
-     Amount before point: 933.
-     Amount after point:  1087.
-44.  Point ID: 71.
-     Amount to pick up:   104.
-     Amount before point: 1087.
-     Amount after point:  1191.
-45.  Point ID: 28.
-     Amount to pick up:   174.
-     Amount before point: 1191.
-     Amount after point:  1365.
-46.  Point ID: 63.
-     Amount to drop down: 184.
-     Amount before point: 1365.
-     Amount after point:  1181.
-47.  Point ID: 61.
-     Amount to drop down: 128.
-     Amount before point: 1181.
-     Amount after point:  1053.
-48.  Point ID: 100.
-     Amount to drop down: 120.
-     Amount before point: 1053.
-     Amount after point:  933.
-49.  Point ID: 38.
-     Amount to drop down: 164.
-     Amount before point: 933.
-     Amount after point:  769.
-50.  Point ID: 34.
-     Amount to pick up:   100.
-     Amount before point: 769.
-     Amount after point:  869.
-51.  Point ID: 95.
-     Amount to pick up:   114.
-     Amount before point: 869.
-     Amount after point:  983.
-52.  Point ID: 19.
-     Amount to drop down: 164.
-     Amount before point: 983.
-     Amount after point:  819.
-53.  Point ID: 51.
-     Amount to pick up:   137.
-     Amount before point: 819.
-     Amount after point:  956.
-54.  Point ID: 80.
-     Amount to drop down: 148.
-     Amount before point: 956.
-     Amount after point:  808.
-55.  Point ID: 21.
-     Amount to drop down: 153.
-     Amount before point: 808.
-     Amount after point:  655.
-56.  Point ID: 11.
-     Amount to drop down: 163.
-     Amount before point: 655.
-     Amount after point:  492.
-57.  Point ID: 83.
-     Amount to drop down: 110.
-     Amount before point: 492.
-     Amount after point:  382.
-58.  Point ID: 45.
-     Amount to drop down: 110.
-     Amount before point: 382.
-     Amount after point:  272.
-59.  Point ID: 48.
-     Amount to drop down: 144.
-     Amount before point: 272.
-     Amount after point:  128.
-60.  Point ID: 89.
-     Amount to pick up:   198.
-     Amount before point: 128.
-     Amount after point:  326.
-61.  Point ID: 1.
-     Amount to drop down: 132.
-     Amount before point: 326.
-     Amount after point:  194.
-62.  Point ID: 36.
-     Amount to pick up:   126.
-     Amount before point: 194.
-     Amount after point:  320.
-63.  Point ID: 2.
+     Amount after point:  1932.
+2.   Point ID: 46.
+     Amount to drop down: 159.
+     Amount before point: 1932.
+     Amount after point:  1773.
+3.   Point ID: 77.
      Amount to drop down: 160.
-     Amount before point: 320.
-     Amount after point:  160.
-64.  Point ID: 31.
-     Amount to pick up:   129.
-     Amount before point: 160.
-     Amount after point:  289.
-65.  Point ID: 73.
-     Amount to pick up:   155.
-     Amount before point: 289.
-     Amount after point:  444.
-66.  Point ID: 50.
-     Amount to drop down: 184.
-     Amount before point: 444.
-     Amount after point:  260.
-67.  Point ID: 93.
-     Amount to pick up:   128.
-     Amount before point: 260.
-     Amount after point:  388.
-68.  Point ID: 27.
-     Amount to drop down: 139.
-     Amount before point: 388.
-     Amount after point:  249.
-69.  Point ID: 46.
-     Amount to drop down: 196.
-     Amount before point: 249.
-     Amount after point:  53.
-70.  Point ID: 14.
-     Amount to pick up:   182.
-     Amount before point: 53.
-     Amount after point:  235.
-71.  Point ID: 9.
-     Amount to pick up:   127.
-     Amount before point: 235.
-     Amount after point:  362.
-72.  Point ID: 91.
-     Amount to drop down: 116.
-     Amount before point: 362.
-     Amount after point:  246.
-73.  Point ID: 90.
-     Amount to drop down: 152.
-     Amount before point: 246.
-     Amount after point:  94.
-74.  Point ID: 78.
-     Amount to pick up:   200.
-     Amount before point: 94.
-     Amount after point:  294.
-75.  Point ID: 85.
+     Amount before point: 1773.
+     Amount after point:  1613.
+4.   Point ID: 60.
+     Amount to drop down: 189.
+     Amount before point: 1613.
+     Amount after point:  1424.
+5.   Point ID: 57.
+     Amount to pick up:   134.
+     Amount before point: 1424.
+     Amount after point:  1558.
+6.   Point ID: 59.
+     Amount to drop down: 146.
+     Amount before point: 1558.
+     Amount after point:  1412.
+7.   Point ID: 16.
+     Amount to drop down: 187.
+     Amount before point: 1412.
+     Amount after point:  1225.
+8.   Point ID: 17.
+     Amount to drop down: 136.
+     Amount before point: 1225.
+     Amount after point:  1089.
+9.   Point ID: 23.
+     Amount to drop down: 142.
+     Amount before point: 1089.
+     Amount after point:  947.
+10.  Point ID: 29.
+     Amount to drop down: 133.
+     Amount before point: 947.
+     Amount after point:  814.
+11.  Point ID: 81.
+     Amount to pick up:   138.
+     Amount before point: 814.
+     Amount after point:  952.
+12.  Point ID: 35.
+     Amount to drop down: 136.
+     Amount before point: 952.
+     Amount after point:  816.
+13.  Point ID: 28.
      Amount to drop down: 176.
-     Amount before point: 294.
-     Amount after point:  118.
-76.  Point ID: 103.
-     This point is a warehouse.
-     Amount to pick up:   1798.
-     Amount before point: 118.
-     Amount after point:  1916.
-77.  Point ID: 55.
-     Amount to drop down: 193.
-     Amount before point: 1916.
-     Amount after point:  1723.
-78.  Point ID: 65.
-     Amount to drop down: 106.
-     Amount before point: 1723.
-     Amount after point:  1617.
-79.  Point ID: 87.
-     Amount to drop down: 130.
-     Amount before point: 1617.
-     Amount after point:  1487.
-80.  Point ID: 24.
-     Amount to drop down: 184.
-     Amount before point: 1487.
-     Amount after point:  1303.
-81.  Point ID: 37.
-     Amount to drop down: 146.
-     Amount before point: 1303.
-     Amount after point:  1157.
-82.  Point ID: 4.
-     Amount to drop down: 155.
-     Amount before point: 1157.
-     Amount after point:  1002.
-83.  Point ID: 76.
-     Amount to drop down: 178.
-     Amount before point: 1002.
-     Amount after point:  824.
-84.  Point ID: 25.
-     Amount to drop down: 166.
-     Amount before point: 824.
-     Amount after point:  658.
-85.  Point ID: 53.
-     Amount to drop down: 139.
-     Amount before point: 658.
-     Amount after point:  519.
-86.  Point ID: 94.
-     Amount to drop down: 146.
-     Amount before point: 519.
-     Amount after point:  373.
-87.  Point ID: 7.
-     Amount to drop down: 103.
-     Amount before point: 373.
-     Amount after point:  270.
-88.  Point ID: 98.
-     Amount to drop down: 152.
-     Amount before point: 270.
-     Amount after point:  118.
-89.  Point ID: 69.
-     Amount to pick up:   127.
-     Amount before point: 118.
-     Amount after point:  245.
-90.  Point ID: 40.
-     Amount to pick up:   169.
-     Amount before point: 245.
-     Amount after point:  414.
-91.  Point ID: 66.
-     Amount to drop down: 139.
-     Amount before point: 414.
-     Amount after point:  275.
-92.  Point ID: 49.
-     Amount to drop down: 120.
-     Amount before point: 275.
-     Amount after point:  155.
-93.  Point ID: 16.
-     Amount to pick up:   142.
-     Amount before point: 155.
-     Amount after point:  297.
-94.  Point ID: 44.
-     Amount to pick up:   132.
-     Amount before point: 297.
-     Amount after point:  429.
-95.  Point ID: 58.
-     Amount to pick up:   120.
-     Amount before point: 429.
-     Amount after point:  549.
-96.  Point ID: 99.
-     Amount to drop down: 130.
-     Amount before point: 549.
-     Amount after point:  419.
-97.  Point ID: 8.
-     Amount to pick up:   169.
-     Amount before point: 419.
-     Amount after point:  588.
-98.  Point ID: 15.
-     Amount to pick up:   192.
-     Amount before point: 588.
-     Amount after point:  780.
-99.  Point ID: 84.
-     Amount to drop down: 168.
-     Amount before point: 780.
-     Amount after point:  612.
-100. Point ID: 57.
-     Amount to drop down: 150.
-     Amount before point: 612.
-     Amount after point:  462.
-101. Point ID: 97.
-     Amount to drop down: 178.
-     Amount before point: 462.
-     Amount after point:  284.
-102. Point ID: 79.
-     Amount to drop down: 127.
-     Amount before point: 284.
-     Amount after point:  157.
-103. Point ID: 72.
+     Amount before point: 816.
+     Amount after point:  640.
+14.  Point ID: 15.
+     Amount to drop down: 191.
+     Amount before point: 640.
+     Amount after point:  449.
+15.  Point ID: 1.
+     Amount to drop down: 177.
+     Amount before point: 449.
+     Amount after point:  272.
+16.  Point ID: 44.
+     Amount to pick up:   173.
+     Amount before point: 272.
+     Amount after point:  445.
+17.  Point ID: 63.
+     Amount to drop down: 132.
+     Amount before point: 445.
+     Amount after point:  313.
+18.  Point ID: 21.
+     Amount to drop down: 105.
+     Amount before point: 313.
+     Amount after point:  208.
+19.  Point ID: 42.
+     Amount to drop down: 142.
+     Amount before point: 208.
+     Amount after point:  66.
+20.  Point ID: 97.
+     Amount to pick up:   137.
+     Amount before point: 66.
+     Amount after point:  203.
+21.  Point ID: 47.
+     Amount to drop down: 131.
+     Amount before point: 203.
+     Amount after point:  72.
+22.  Point ID: 65.
+     Amount to pick up:   189.
+     Amount before point: 72.
+     Amount after point:  261.
+23.  Point ID: 76.
+     Amount to drop down: 163.
+     Amount before point: 261.
+     Amount after point:  98.
+24.  Point ID: 61.
+     Amount to pick up:   101.
+     Amount before point: 98.
+     Amount after point:  199.
+25.  Point ID: 45.
+     Amount to pick up:   141.
+     Amount before point: 199.
+     Amount after point:  340.
+26.  Point ID: 43.
      Amount to drop down: 112.
-     Amount before point: 157.
-     Amount after point:  45.
-104. Point ID: 103.
+     Amount before point: 340.
+     Amount after point:  228.
+27.  Point ID: 74.
+     Amount to drop down: 157.
+     Amount before point: 228.
+     Amount after point:  71.
+28.  Point ID: 37.
+     Amount to pick up:   142.
+     Amount before point: 71.
+     Amount after point:  213.
+29.  Point ID: 41.
+     Amount to pick up:   106.
+     Amount before point: 213.
+     Amount after point:  319.
+30.  Point ID: 7.
+     Amount to drop down: 173.
+     Amount before point: 319.
+     Amount after point:  146.
+31.  Point ID: 12.
+     Amount to pick up:   168.
+     Amount before point: 146.
+     Amount after point:  314.
+32.  Point ID: 8.
+     Amount to drop down: 143.
+     Amount before point: 314.
+     Amount after point:  171.
+33.  Point ID: 3.
+     Amount to pick up:   107.
+     Amount before point: 171.
+     Amount after point:  278.
+34.  Point ID: 52.
+     Amount to drop down: 146.
+     Amount before point: 278.
+     Amount after point:  132.
+35.  Point ID: 51.
+     Amount to pick up:   159.
+     Amount before point: 132.
+     Amount after point:  291.
+36.  Point ID: 64.
+     Amount to drop down: 153.
+     Amount before point: 291.
+     Amount after point:  138.
+37.  Point ID: 103.
      This point is a warehouse.
-     Amount to drop down: 45.
-     Amount before point: 45.
+     Amount to pick up:   1787.
+     Amount before point: 138.
+     Amount after point:  1925.
+38.  Point ID: 50.
+     Amount to drop down: 139.
+     Amount before point: 1925.
+     Amount after point:  1786.
+39.  Point ID: 13.
+     Amount to drop down: 195.
+     Amount before point: 1786.
+     Amount after point:  1591.
+40.  Point ID: 10.
+     Amount to drop down: 114.
+     Amount before point: 1591.
+     Amount after point:  1477.
+41.  Point ID: 30.
+     Amount to drop down: 185.
+     Amount before point: 1477.
+     Amount after point:  1292.
+42.  Point ID: 93.
+     Amount to drop down: 200.
+     Amount before point: 1292.
+     Amount after point:  1092.
+43.  Point ID: 48.
+     Amount to drop down: 106.
+     Amount before point: 1092.
+     Amount after point:  986.
+44.  Point ID: 84.
+     Amount to drop down: 175.
+     Amount before point: 986.
+     Amount after point:  811.
+45.  Point ID: 22.
+     Amount to drop down: 179.
+     Amount before point: 811.
+     Amount after point:  632.
+46.  Point ID: 75.
+     Amount to drop down: 172.
+     Amount before point: 632.
+     Amount after point:  460.
+47.  Point ID: 32.
+     Amount to drop down: 192.
+     Amount before point: 460.
+     Amount after point:  268.
+48.  Point ID: 9.
+     Amount to drop down: 130.
+     Amount before point: 268.
+     Amount after point:  138.
+49.  Point ID: 103.
+     This point is a warehouse.
+     Amount to pick up:   1810.
+     Amount before point: 138.
+     Amount after point:  1948.
+50.  Point ID: 88.
+     Amount to drop down: 138.
+     Amount before point: 1948.
+     Amount after point:  1810.
+51.  Point ID: 49.
+     Amount to drop down: 136.
+     Amount before point: 1810.
+     Amount after point:  1674.
+52.  Point ID: 100.
+     Amount to drop down: 103.
+     Amount before point: 1674.
+     Amount after point:  1571.
+53.  Point ID: 96.
+     Amount to drop down: 174.
+     Amount before point: 1571.
+     Amount after point:  1397.
+54.  Point ID: 98.
+     Amount to drop down: 164.
+     Amount before point: 1397.
+     Amount after point:  1233.
+55.  Point ID: 80.
+     Amount to drop down: 178.
+     Amount before point: 1233.
+     Amount after point:  1055.
+56.  Point ID: 56.
+     Amount to drop down: 107.
+     Amount before point: 1055.
+     Amount after point:  948.
+57.  Point ID: 70.
+     Amount to drop down: 147.
+     Amount before point: 948.
+     Amount after point:  801.
+58.  Point ID: 19.
+     Amount to drop down: 155.
+     Amount before point: 801.
+     Amount after point:  646.
+59.  Point ID: 31.
+     Amount to drop down: 181.
+     Amount before point: 646.
+     Amount after point:  465.
+60.  Point ID: 38.
+     Amount to drop down: 185.
+     Amount before point: 465.
+     Amount after point:  280.
+61.  Point ID: 5.
+     Amount to drop down: 142.
+     Amount before point: 280.
+     Amount after point:  138.
+62.  Point ID: 92.
+     Amount to pick up:   155.
+     Amount before point: 138.
+     Amount after point:  293.
+63.  Point ID: 72.
+     Amount to pick up:   123.
+     Amount before point: 293.
+     Amount after point:  416.
+64.  Point ID: 83.
+     Amount to pick up:   141.
+     Amount before point: 416.
+     Amount after point:  557.
+65.  Point ID: 78.
+     Amount to drop down: 109.
+     Amount before point: 557.
+     Amount after point:  448.
+66.  Point ID: 6.
+     Amount to pick up:   127.
+     Amount before point: 448.
+     Amount after point:  575.
+67.  Point ID: 34.
+     Amount to pick up:   132.
+     Amount before point: 575.
+     Amount after point:  707.
+68.  Point ID: 40.
+     Amount to drop down: 134.
+     Amount before point: 707.
+     Amount after point:  573.
+69.  Point ID: 18.
+     Amount to drop down: 183.
+     Amount before point: 573.
+     Amount after point:  390.
+70.  Point ID: 86.
+     Amount to drop down: 177.
+     Amount before point: 390.
+     Amount after point:  213.
+71.  Point ID: 14.
+     Amount to pick up:   170.
+     Amount before point: 213.
+     Amount after point:  383.
+72.  Point ID: 24.
+     Amount to pick up:   159.
+     Amount before point: 383.
+     Amount after point:  542.
+73.  Point ID: 87.
+     Amount to drop down: 132.
+     Amount before point: 542.
+     Amount after point:  410.
+74.  Point ID: 66.
+     Amount to drop down: 145.
+     Amount before point: 410.
+     Amount after point:  265.
+75.  Point ID: 4.
+     Amount to drop down: 135.
+     Amount before point: 265.
+     Amount after point:  130.
+76.  Point ID: 53.
+     Amount to pick up:   132.
+     Amount before point: 130.
+     Amount after point:  262.
+77.  Point ID: 85.
+     Amount to drop down: 100.
+     Amount before point: 262.
+     Amount after point:  162.
+78.  Point ID: 82.
+     Amount to pick up:   117.
+     Amount before point: 162.
+     Amount after point:  279.
+79.  Point ID: 36.
+     Amount to pick up:   124.
+     Amount before point: 279.
+     Amount after point:  403.
+80.  Point ID: 33.
+     Amount to drop down: 128.
+     Amount before point: 403.
+     Amount after point:  275.
+81.  Point ID: 11.
+     Amount to drop down: 148.
+     Amount before point: 275.
+     Amount after point:  127.
+82.  Point ID: 68.
+     Amount to pick up:   160.
+     Amount before point: 127.
+     Amount after point:  287.
+83.  Point ID: 73.
+     Amount to pick up:   114.
+     Amount before point: 287.
+     Amount after point:  401.
+84.  Point ID: 55.
+     Amount to drop down: 189.
+     Amount before point: 401.
+     Amount after point:  212.
+85.  Point ID: 27.
+     Amount to pick up:   110.
+     Amount before point: 212.
+     Amount after point:  322.
+86.  Point ID: 90.
+     Amount to pick up:   100.
+     Amount before point: 322.
+     Amount after point:  422.
+87.  Point ID: 2.
+     Amount to pick up:   186.
+     Amount before point: 422.
+     Amount after point:  608.
+88.  Point ID: 25.
+     Amount to pick up:   140.
+     Amount before point: 608.
+     Amount after point:  748.
+89.  Point ID: 58.
+     Amount to pick up:   134.
+     Amount before point: 748.
+     Amount after point:  882.
+90.  Point ID: 94.
+     Amount to pick up:   188.
+     Amount before point: 882.
+     Amount after point:  1070.
+91.  Point ID: 91.
+     Amount to pick up:   121.
+     Amount before point: 1070.
+     Amount after point:  1191.
+92.  Point ID: 71.
+     Amount to pick up:   105.
+     Amount before point: 1191.
+     Amount after point:  1296.
+93.  Point ID: 79.
+     Amount to pick up:   172.
+     Amount before point: 1296.
+     Amount after point:  1468.
+94.  Point ID: 89.
+     Amount to pick up:   115.
+     Amount before point: 1468.
+     Amount after point:  1583.
+95.  Point ID: 20.
+     Amount to pick up:   127.
+     Amount before point: 1583.
+     Amount after point:  1710.
+96.  Point ID: 39.
+     Amount to drop down: 190.
+     Amount before point: 1710.
+     Amount after point:  1520.
+97.  Point ID: 69.
+     Amount to drop down: 161.
+     Amount before point: 1520.
+     Amount after point:  1359.
+98.  Point ID: 54.
+     Amount to drop down: 199.
+     Amount before point: 1359.
+     Amount after point:  1160.
+99.  Point ID: 67.
+     Amount to drop down: 197.
+     Amount before point: 1160.
+     Amount after point:  963.
+100. Point ID: 99.
+     Amount to drop down: 137.
+     Amount before point: 963.
+     Amount after point:  826.
+101. Point ID: 62.
+     Amount to pick up:   104.
+     Amount before point: 826.
+     Amount after point:  930.
+102. Point ID: 26.
+     Amount to drop down: 167.
+     Amount before point: 930.
+     Amount after point:  763.
+103. Point ID: 95.
+     Amount to drop down: 130.
+     Amount before point: 763.
+     Amount after point:  633.
+104. Point ID: 105.
+     This point is a warehouse.
+     Amount to drop down: 633.
+     Amount before point: 633.
      Amount after point:  0.

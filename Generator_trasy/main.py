@@ -1,8 +1,9 @@
 import random
 import math
 import numpy as np
+import matplotlib.pyplot as plt
 
-random.seed(1)
+# random.seed(1)
 
 maxLoad = 2000
 
@@ -197,18 +198,43 @@ def get_total_route_length(start_warehouse_point, generated_route):
     for sub_route in sub_routes:
         temp_length = get_route_length(sub_route)
         if sub_routes_crosses[sub_routes.index(sub_route)] == np.min(sub_routes_crosses) \
-                and random.randint(0, 100) <= 4:
+                and random.randint(0, 99) <= 4:
             temp_length = temp_length * 1.1
         temp_total_route_length += temp_length
     return temp_total_route_length
 
+
+def add_arrow(line, position=None, direction='right', size=15, color=None):
+    if color is None:
+        color = line.get_color()
+
+    xdata = line.get_xdata()
+    ydata = line.get_ydata()
+
+    if position is None:
+        position = xdata.mean()
+    start_ind = np.argmin(np.absolute(xdata - position))
+    if direction == 'right':
+        end_ind = start_ind + 1
+    else:
+        end_ind = start_ind - 1
+
+    line.axes.annotate('', xytext=(xdata[start_ind], ydata[start_ind]), xy=(xdata[end_ind], ydata[end_ind]), \
+                       arrowprops=dict(arrowstyle="->", color=color), size=size)
+
+def route_contains_point(temp_warehouse, temp_route):
+    contains = False
+    for temp_point in temp_route:
+        if temp_point.x == temp_warehouse.x and temp_point.y == temp_warehouse.y:
+            contains = True
+    return contains
 
 if __name__ == '__main__':
     points = generate_points(100)
     pickup_points = get_pickup_points(points)
     dropdown_points = get_dropdown_points(points)
     warehouses = generate_warehouses(5, points)
-    start_warehouse = warehouses[random.randint(0, 5)]
+    start_warehouse = warehouses[random.randint(0, 4)]
     actual_x = start_warehouse.x
     actual_y = start_warehouse.y
     route = []
@@ -398,10 +424,26 @@ if __name__ == '__main__':
         i += 1
     file.close()
     file = open("route.csv", "w")
-    file.write("x,y,w\n")
+    file.write("x,y\n")
     for point in route:
-        w = "n"
-        if point.id > 100:
-            w = "t"
-        file.write(str(point.x) + "," + str(point.y) + "," + w + "\n")
+        file.write(str(point.x) + "," + str(point.y) + "\n")
     file.close()
+    f, ax = plt.subplots(1)
+    for i in range(1, route.__len__()):
+        xvals = [route[i - 1].x, route[i].x]
+        yvals = [route[i - 1].y, route[i].y]
+        line = ax.plot(xvals, yvals, color='black')[0]
+        add_arrow(line)
+    for warehouse in warehouses:
+        if not route_contains_point(warehouse, route):
+            plt.plot(warehouse.x, warehouse.y, marker="o", markeredgecolor="blue", markerfacecolor="blue")
+    for point in route:
+        temp_color = "green"
+        if route.index(point) == route.__len__() - 1:
+            temp_color = "red"
+        elif route.index(point) == 0:
+            temp_color = "yellow"
+        elif point.id > 100:
+            temp_color = "blue"
+        plt.plot(point.x, point.y, marker="o", markeredgecolor=temp_color, markerfacecolor=temp_color)
+    plt.savefig('route.png', dpi=800)
