@@ -1,5 +1,6 @@
 import random
 import math
+import numpy as np
 
 random.seed(1)
 
@@ -50,19 +51,11 @@ def generate_points(number_of_points):
 
 
 def get_pickup_points(generated_points):
-    found_pickup_points = []
-    for point in generated_points:
-        if point.pickup:
-            found_pickup_points.append(point)
-    return found_pickup_points
+    return [point for point in generated_points if point.pickup]
 
 
 def get_dropdown_points(generated_points):
-    found_dropdown_points = []
-    for point in generated_points:
-        if not point.pickup:
-            found_dropdown_points.append(point)
-    return found_dropdown_points
+    return [point for point in generated_points if not point.pickup]
 
 
 def update_points(generated_points, found_pickup_points, found_dropdown_points):
@@ -106,6 +99,21 @@ def get_distance(x1, y1, x2, y2):
     return math.sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2))
 
 
+def get_scalar(x1, y1, x2, y2, x3, y3):
+    return ((x2 - x1) * (y3 - y1)) - ((x3 - x1) * (y2 - y1))
+
+
+def is_intersection(x1, y1, x2, y2, x3, y3, x4, y4):
+    s1 = get_scalar(x1, y1, x3, y3, x2, y2)
+    s2 = get_scalar(x1, y1, x4, y4, x2, y2)
+    s3 = get_scalar(x3, y3, x1, y1, x4, y4)
+    s4 = get_scalar(x3, y3, x2, y2, x4, y4)
+    if ((s1 > 0 > s2) or (s1 < 0 < s2)) and ((s3 > 0 > s4) or (s3 < 0 < s4)):
+        return True
+    else:
+        return False
+
+
 def is_any_point_undone(generated_points):
     for point in generated_points:
         if not point.done:
@@ -140,12 +148,59 @@ def find_nearest_warehouse(generated_warehouses, x, y):
     return nearest_found_warehouse
 
 
-def can_go_to_point(point_to_go, temp_balance):
-    if point_to_go.pickup and point_to_go.how_much + temp_balance <= maxLoad:
+def can_go_to_point(point_to_go, temp_balance_par):
+    if point_to_go.pickup and point_to_go.how_much + temp_balance_par <= maxLoad:
         return True
-    if not point_to_go.pickup and temp_balance - point_to_go.how_much >= 0:
+    if not point_to_go.pickup and temp_balance_par - point_to_go.how_much >= 0:
         return True
     return False
+
+
+def get_route_length(route_points):
+    temp_x = route_points[0].x
+    temp_y = route_points[0].y
+    route_length = 0
+    for temp_point in route_points:
+        route_length += get_distance(temp_x, temp_y, temp_point.x, temp_point.y)
+        temp_x = temp_point.x
+        temp_y = temp_point.y
+    return route_length
+
+
+def get_total_route_length(start_warehouse_point, generated_route):
+    sub_routes = []
+    start_warehouse_point_temp = Point()
+    start_warehouse_point_temp.x = start_warehouse_point.x
+    start_warehouse_point_temp.y = start_warehouse_point.y
+    start_warehouse_point_temp.id = start_warehouse_point.id
+    temp_sub_route = [start_warehouse_point_temp]
+    for temp_point in generated_route:
+        temp_sub_route.append(temp_point)
+        if temp_point.id > 100:
+            sub_routes.append(temp_sub_route)
+            temp_sub_route = [temp_point]
+    sub_routes_crosses = []
+    for temp_route in sub_routes:
+        crosses = 0
+        for temp_point in temp_route:
+            for i in range(temp_route.index(temp_point) + 1):
+                if i >= 3:
+                    p1 = temp_route[i]
+                    p2 = temp_route[i - 1]
+                    for j in range(i - 2):
+                        p3 = temp_route[j]
+                        p4 = temp_route[j + 1]
+                        if is_intersection(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y, p4.x, p4.y):
+                            crosses += 1
+        sub_routes_crosses.append(crosses)
+    temp_total_route_length = 0
+    for sub_route in sub_routes:
+        temp_length = get_route_length(sub_route)
+        if sub_routes_crosses[sub_routes.index(sub_route)] == np.min(sub_routes_crosses) \
+                and random.randint(0, 100) <= 4:
+            temp_length = temp_length * 1.1
+        temp_total_route_length += temp_length
+    return temp_total_route_length
 
 
 if __name__ == '__main__':
@@ -298,23 +353,26 @@ if __name__ == '__main__':
                             actual_x = temp_dropdown_point.x
                             actual_y = temp_dropdown_point.y
         update_points(points, pickup_points, dropdown_points)
+    temp_nearest_warehouse = find_nearest_warehouse(warehouses, actual_x, actual_y)
+    temp_nearest_warehouse_point = Point()
+    temp_nearest_warehouse_point.id = temp_nearest_warehouse.id
+    temp_nearest_warehouse_point.x = temp_nearest_warehouse.x
+    temp_nearest_warehouse_point.y = temp_nearest_warehouse.y
+    temp_nearest_warehouse_point.pickup = False
+    temp_nearest_warehouse_point.how_much = balance
+    route.append(temp_nearest_warehouse_point)
+    i = 1
+    balance = 0
     temp_start_warehouse_point = Point()
     temp_start_warehouse_point.id = start_warehouse.id
     temp_start_warehouse_point.x = start_warehouse.x
     temp_start_warehouse_point.y = start_warehouse.y
-    temp_start_warehouse_point.pickup = False
-    temp_start_warehouse_point.how_much = balance
-    i = 1
-    balance = start_amount
-    total_route = 0
-    temp_x = start_warehouse.x
-    temp_y = start_warehouse.y
-    for point in route:
-        total_route += get_distance(temp_x, temp_y, point.x, point.y)
-        temp_x = point.x
-        temp_y = point.y
+    temp_start_warehouse_point.pickup = True
+    temp_start_warehouse_point.how_much = start_amount
+    route.insert(0, temp_start_warehouse_point)
+    total_route_length = get_total_route_length(start_warehouse, route)
     file = open("generated_route.txt", "w")
-    file.write("Total route length: " + "{:.2f}".format(total_route) + ".\n")
+    file.write("Total route length: " + "{:.2f}".format(total_route_length) + ".\n")
     for point in route:
         temp_amount = -point.how_much
         if point.pickup:
@@ -338,4 +396,12 @@ if __name__ == '__main__':
             balance -= point.how_much
             file.write("     Amount after point:  " + str(balance) + ".\n")
         i += 1
+    file.close()
+    file = open("route.csv", "w")
+    file.write("x,y,w\n")
+    for point in route:
+        w = "n"
+        if point.id > 100:
+            w = "t"
+        file.write(str(point.x) + "," + str(point.y) + "," + w + "\n")
     file.close()
