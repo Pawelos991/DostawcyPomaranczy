@@ -19,7 +19,7 @@ routes = generate_routes(
 
 for route in routes:
     plot_route(
-        routes,
+        route,
         warehouses,
         save_to_png=False
     )
