@@ -2,7 +2,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-from models import Point, Warehouse
+from models import Point, Warehouse, Route
 
 maxLoad = 2000
 
@@ -215,7 +215,7 @@ def route_contains_point(temp_warehouse, temp_route):
     return contains
 
 
-def plot_route(route, warehouses, save_to_png=False):
+def plot_route(route, route_length, warehouses, save_to_png=False):
     f, ax = plt.subplots(1)
     for i in range(1, len(route)):
         xvals = [route[i - 1].x, route[i].x]
@@ -234,6 +234,9 @@ def plot_route(route, warehouses, save_to_png=False):
         elif point.id > 100:
             temp_color = "blue"
         plt.plot(point.x, point.y, marker="o", markeredgecolor=temp_color, markerfacecolor=temp_color)
+
+    plt.figtext(0.13, 0.05, f"Długość trasy: {route_length:.2f}", ha="left", fontsize=12)
+    plt.subplots_adjust(bottom=0.17)
 
     if save_to_png:
         plt.savefig('route.png', dpi=800)
@@ -447,6 +450,7 @@ def generate_routes(generator, points, warehouses, routes=1, write_generated_rou
                 for point in route:
                     file.write(str(point.x) + "," + str(point.y) + "\n")
 
-        generated_routes.append(route)
+        generated_route = Route(route, total_route_length)
+        generated_routes.append(generated_route)
 
     return generated_routes
